@@ -1,8 +1,6 @@
 package com.musiks.backend.music;
 
-import org.springframework.data.neo4j.repository.ReactiveNeo4jRepository;
-import reactor.core.publisher.Flux;
+import org.springframework.data.neo4j.repository.Neo4jRepository;
 
-public interface MusicRepository extends ReactiveNeo4jRepository<Music,Long> {
-    public Flux<Music> findAll();
+public interface MusicRepository extends Neo4jRepository<Music, Long> {
 }
